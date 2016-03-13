@@ -40,12 +40,12 @@ public class Player
         if (money >= betAmount)
         {
             if(i == 1) {
-                money = money - betAmount;
+              //  money = money - betAmount;
                 isBet = isBet + betAmount;
             }
             if(i == 2)
             {
-                money = money - betAmount;
+               // money = money - betAmount;
                 SisBet = SisBet + betAmount;
             }
         }
@@ -83,6 +83,7 @@ public class Player
             }
             if (dealScore == g.p.score) {
                 g.winState = "t";
+                g.p.money += g.p.isBet;
             }
             if (g.SwinState == "p") {
                 if (dealScore > 21) {

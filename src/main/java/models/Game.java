@@ -115,7 +115,7 @@ public class Game {
         hit(1);
      }
 
-    //customDeal to setup game for testing purposes
+    /* function not needed
     public void customDeal(int c1, int c2, int c3, int c4) {
         cols.get(0).add(deck.get(c1));
         deck.remove(c1);
@@ -126,7 +126,7 @@ public class Game {
         cols.get(3).add(deck.get(c4));
         deck.remove(c4);
     }
-
+    */
     public void remove(int columnNumber) {
         if(colHasCards(columnNumber)) {
             Card c = getTopCard(columnNumber);
